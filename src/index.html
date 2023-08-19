@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="box_main">
+     
+      <h1>Calculator</h1>
+
+      <div class="tela">
+      
+      </div>
+
+      <table>
+         <tr>
+            <td><button onclick="clean()">C</button></td>
+            <td><button onclick="back()">back</button></td>
+            <td><button onclick="inserir('%')">&percnt;</button></td>
+            <td><button onclick="inserir('/')">/</button></td>
+         </tr>
+
+         <tr>
+            <td><button onclick="inserir('7')">7</button></td>
+            <td><button onclick="inserir('8')">8</button></td>
+            <td><button onclick="inserir('9')">9</button></td>
+            <td><button onclick="inserir('*')">*</button></td>
+         </tr>
+
+         <tr>
+            <td><button onclick="inserir('4')">4</button></td>
+            <td><button onclick="inserir('5')">5</button></td>
+            <td><button onclick="inserir('6')">6</button></td>
+            <td><button onclick="inserir('-')">-</button></td>
+
+         </tr>
+
+         <tr>
+            <td><button onclick="inserir('1')">1</button></td>
+            <td><button onclick="inserir('2')">2</button></td>
+            <td><button onclick="inserir('3')">3</button></td>
+            <td><button onclick="inserir('+')">+</button></td>
+         </tr>
+
+         <tr>
+            <td colspan="2" ><button id="btn_zero" onclick="inserir('0')">0</button></td>
+            <td><button onclick="inserir('.')">.</button></td>
+            <td><button id="btn_igual" onclick="result()" >=</button></td>
+         </tr>
+      </table>
+      <div class="copy_box" >
+         <span> 
+            <a href="http://github.com/GabrielVieira14" target="_blank">
+               &copy;GabrielVieira14
+               <i class="fa fa-github" style="font-size:16px"></i>
+            </a>
+         </span>
+      </div>
+      
+   </div>
+</body>
+
+<script src="main.js" ></script>
+</html>
